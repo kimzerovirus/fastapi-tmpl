@@ -13,39 +13,39 @@
 
 ### Launch docker
 ```shell
-> docker-compose -f docker/docker-compose.yml up
+docker-compose -p poetry-application -f docker/docker-compose.yml up
 ```
 
 ### Install dependency
 ```shell
-> poetry shell
-> poetry install
+poetry shell
+poetry install
 ```
 
 ### Apply alembic revision
 ```shell
-> alembic upgrade head
+alembic upgrade head
 ```
 
 ### Run server
 ```shell
-> python3 main.py --env local|dev|prod --debug
+python3 main.py --env local|dev|prod --debug
 ```
 
 ### Run test codes
 ```shell
-> make test
+make test
 ```
 
 ### Make coverage report
 ```shell
-> make cov
+make cov
 ```
 
 ### Formatting
 
 ```shell
-> pre-commit
+pre-commit
 ```
 
 ## SQLAlchemy for asyncio context
