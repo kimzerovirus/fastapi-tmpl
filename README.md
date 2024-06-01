@@ -20,6 +20,10 @@ docker-compose -p poetry-application -f docker/docker-compose.yml up
 ```shell
 poetry shell
 poetry install
+
+# add package
+poetry add [package]
+poetry add --group dev pytest  # dev
 ```
 
 ### Apply alembic revision
